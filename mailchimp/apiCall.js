@@ -2,6 +2,7 @@ var https = require('https');
 
 exports.handler = function(event, context, callback) {
 
+    //Add this contact to mailchimp
     var body = '{"members" : [{"email_address": "bishop@buster.com", "status": "subscribed"}],"update_existing":true}';
 
     // the post options
